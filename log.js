@@ -1,1 +1,5 @@
-console.log("i am string");
+console.log(5);
+console.log(5);
+console.log(5);
+console.log(5);
+console.log(5);
