@@ -1,1 +1,3 @@
-[next-js-interview-questions](https://mindmajix.com/next-js-interview-questions)
+Check out this <a href="https://mindmajix.com/next-js-interview-questions" target="_blank">Link for NextJs Questions</a>.
+
+
