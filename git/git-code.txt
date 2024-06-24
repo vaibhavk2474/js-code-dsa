@@ -1,3 +1,6 @@
 it is first line from local but changes in local in second time
 is is second line from (adding unneccessary code here from remote ) remote but second time it is changed
 it is third line from remote
+
+
+added unwanted code from remote
