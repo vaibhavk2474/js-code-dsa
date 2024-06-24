@@ -1,2 +1,2 @@
-it is first line from local
-is is second line from remote
+it is first line from local 
+is is second line from remote but second time it is changed
