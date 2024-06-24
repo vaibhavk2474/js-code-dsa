@@ -64,20 +64,57 @@ const asyncHandler = async (apiURL) => {
 // });
 
 // 1.1 all two times one after another
+// console.log(1);
+
+// (async () => {
+//   console.log(3);
+//   const res = await asyncHandler(
+//     "https://jsonplaceholder.typicode.com/todos/1"
+//   );
+//   console.log(4);
+
+//   const response = await res.json();
+
+//   console.log(5);
+
+//   console.log("response", response);
+//   console.log(7);
+// })();
+// console.log(8);
+
+const dummyFetch = async () => {
+  console.log(3);
+
+  const res_a = await new Promise((r) => {
+    console.log("a1");
+    r("done a1");
+  });
+
+  console.log("res_a", res_a);
+
+  const res = await new Promise((r) => {
+    console.log(4);
+    setTimeout(() => {
+      console.log("done");
+      r("done");
+    }, 5000);
+
+    console.log(5);
+  });
+  console.log(6);
+
+  console.log("res", res);
+
+  console.log(7);
+};
+
 console.log(1);
 
-(async () => {
-  console.log(3);
-  const res = await asyncHandler(
-    "https://jsonplaceholder.typicode.com/todos/1"
-  );
-  console.log(4);
+const dummyFetch_a = dummyFetch();
+console.log("dummyFetch", dummyFetch_a);
+console.log(2);
 
-  const response = await res.json();
-
-  console.log(5);
-
-  console.log("response", response);
-  console.log(7);
-})();
-console.log(8);
+setTimeout(() => {
+  console.log(8);
+  console.log("dummyFetch_a", dummyFetch_a);
+}, 10000);
