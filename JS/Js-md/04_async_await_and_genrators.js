@@ -115,3 +115,16 @@ console.log(2);
 // promise.then((r) => gen.next(r).value).then((d) => gen.next(d));
 
 // console.log(2);
+
+// ..........................................
+function* generatorA() {
+  const res1 = yield 3 + 5;
+  const res2 = yield 10;
+}
+
+const gen = generatorA();
+
+console.log(gen.next());
+console.log(gen.next());
+
+console.log(gen.next());
